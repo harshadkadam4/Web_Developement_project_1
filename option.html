@@ -1,0 +1,165 @@
+<html>
+
+<head>
+    <title>Halls</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+        
+        .active {
+            background-color: #04AA6D;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(clg_gate_modified.psd);
+            background-size: cover;
+            background-position: center;
+            font-family: sans-serif;
+        }
+        
+        .login-box1 {
+            width: 600px;
+            height: 460px;
+            background: rgb(213, 141, 34);
+            color: rgb(0, 0, 0);
+            top: 50%;
+            left: 25%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 30px 20px;
+            padding-bottom: 20px;
+            margin-bottom: 20%;
+            border-radius: 3%;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        .login-box2 {
+            width: 600px;
+            height: 460px;
+            background: rgb(213, 141, 34);
+            color: rgb(0, 0, 0);
+            top: 50%;
+            left: 75%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            padding: 30px 20px;
+            border-radius: 3%;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            margin: 0;
+            padding: 0 0 20px;
+            text-align: center;
+            font-size: 42px;
+        }
+        
+        .login-box p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+        
+        .login-box input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .login-box input[type="text"],
+        input[type="password"] {
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        .login-box input[type="submit"] {
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #1c8adb;
+            color: #fff;
+            font-size: 18px;
+            border-radius: 20px;
+        }
+        
+        .login-box input[type="submit"]:hover {
+            cursor: pointer;
+            background: #39dc79;
+            color: #000;
+        }
+        
+        .login-box a {
+            text-decoration: none;
+            font-size: 14px;
+            color: #fff;
+        }
+        
+        .login-box a:hover {
+            color: #39dc79;
+        }
+        
+        .login-box1 img {
+            width: 100%;
+            height: 80%;
+        }
+        
+        .login-box2 img {
+            width: 100%;
+            height: 85%;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="option.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li style="float:right"><a class="active" href="login.html">Login</a></li>
+    </ul>
+    <a href="jivraj.html">
+        <div class="login-box1">
+            <h1>JIVRAJ HALL</h1>
+            <img src="jivraj.jpg">
+        </div>
+    </a>
+
+    <a href="seminar.html">
+        <div class="login-box2">
+            <h1>SEMINAR HALL</h1>
+            <img src="prashasan_bhavan.jpg">
+        </div>
+    </a>
+
+
+</body>
+
+</html>

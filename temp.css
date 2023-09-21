@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(jivraj.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book_form {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5) !important;
+    width: 420px;
+    height: 480px;
+    background: rgb(225, 108, 108);
+    color: rgb(22, 12, 12);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 3%;
+}
+
+.book_form p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.book_form input[type="text"],
+[type="number"],
+[type="date"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.book_form input[type="submit"] {
+    width: 80%;
+    height: 30px;
+    color: white;
+    position: relative;
+    left: 10%;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+}

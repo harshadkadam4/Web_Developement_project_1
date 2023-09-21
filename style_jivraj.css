@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(jivraj.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.login-box {
+    width: 420px;
+    height: 580px;
+    background: rgb(173, 138, 65);
+    color: #fff;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 2%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 1);
+}
+
+h1 {
+    margin: 0;
+    padding-top: 0%;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 200px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    position: relative;
+    padding-top: 0%;
+    margin-bottom: 3%;
+    left: 75px;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box p {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0%;
+    font-weight: bold;
+    color: #000;
+}

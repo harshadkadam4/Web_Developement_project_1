@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(clg_gate_modified.psd);
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        #booking {
+            width: 20%;
+            height: 40px;
+            color: white;
+            position: relative;
+            left: 15%;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+        }
+        
+        #update {
+            width: 15%;
+            height: 40px;
+            color: white;
+            position: relative;
+            left: 18%;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        
+        #jbook {
+            width: 15%;
+            height: 40px;
+            color: white;
+            position: relative;
+            left: 22%;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        #sbook {
+            width: 15%;
+            height: 40px;
+            color: white;
+            position: relative;
+            left: 25%;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+        
+        table {
+            align-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 25%;
+        }
+        
+        select {
+            width: 20%;
+            height: 40px;
+            color: rgb(0, 0, 0);
+            position: relative;
+            left: 15%;
+            font-size: 16px;
+            font-weight: bolder;
+            border-radius: 10px;
+        }
+        
+        p {
+            font-size: 35px;
+            padding-left: 15%;
+            font-weight: bolder;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function result() {
+            var ar;
+            if (window.XMLHttpRequest) {
+                ar = new XMLHttpRequest();
+            } else {
+                ar = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            ar.onreadystatechange = function() {
+                if (ar.readyState == 4 && ar.status == 200) {
+                    document.getElementById("result").innerHTML = ar.responseText;
+                }
+            }
+
+            var f = document.getElementById("hall").value;
+
+            ar.open("POST", "admin.php?hall=" + f, true);
+            ar.send();
+        }
+    </script>
+
+</head>
+
+<body>
+    <form method="GET">
+        <p>Select Hall</p>
+        <select name="hall_option" id="hall">
+                <option value="jivraj_book">Jeevraj</option>
+                <option value="seminar_book">Seminar</option>
+        </select><br>
+        <input type="button" value="Booking Status" onclick="result()" id="booking">
+        <a href="update_status.html"><input type="button" value="Update Status" id="update"></a>
+        <a href="jivraj.php"><input type="button" value="Book Jivraj" id="jbook"></a>
+        <a href="seminar.php"><input type="button" value="Book Seminar" id="sbook"></a>
+        <div id="result">
+    </form>
+    </div>
+</body>
+
+</html>

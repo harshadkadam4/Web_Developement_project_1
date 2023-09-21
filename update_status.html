@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Booking</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .book_form {
+            width: 420px;
+            height: 320px;
+            background: rgb(130, 128, 252);
+            color: rgb(22, 12, 12);
+            top: 40%;
+            left: 50%;
+            padding: 20px 20px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            box-sizing: border-box;
+            border-radius: 3%;
+            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+        }
+        
+        h1 {
+            padding: 0;
+            padding-bottom: 3%;
+            padding-top: 0%;
+            margin: 0;
+            text-align: center;
+            color: rgb(252, 252, 252);
+        }
+        
+        .book_form p {
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+        
+        .book_form input[type="text"],
+        [type="number"],
+        [type="date"] {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .book_form select {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .book_form input[type="submit"] {
+            width: 80%;
+            height: 30px;
+            color: white;
+            position: relative;
+            left: 10%;
+            font-size: 16px;
+            font-weight: bolder;
+            background-color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 10px;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="book_form">
+        <form method="POST" action="update_status.php">
+            <h1>UPDATE STATUS</h1>
+            <p>Select Hall</p>
+            <select name="hall_option" id="hall">
+                <option value="jivraj_book">Jeevraj</option>
+                <option value="seminar_book">Seminar</option>
+            </select>
+            <p>Enter Booking Id</p>
+            <input type="number" name="id" placeholder="Enter Boking Id" required>
+            <p>Update Status Booked to Avaialble</p>
+            <input type="submit" name="submit" value="Update">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
